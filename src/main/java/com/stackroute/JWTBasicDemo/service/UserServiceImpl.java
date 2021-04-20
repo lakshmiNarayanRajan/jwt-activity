@@ -42,7 +42,7 @@ public class UserServiceImpl implements UserService{
     }
 
     @Override
-    public StudentUserDao findByEmail(String email) {
-        return repository.findByEmail(email);
+    public StudentUserDao findByemail(String email) {
+        return repository.findByemail(email);
     }
 }

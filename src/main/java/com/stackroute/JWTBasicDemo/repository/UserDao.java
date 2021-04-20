@@ -6,6 +6,6 @@ import org.springframework.stereotype.Repository;
 
 @Repository
 public interface UserDao extends CrudRepository<StudentUserDao, Integer> {
-    StudentUserDao findByEmail(String email);
+    StudentUserDao findByemail(String email);
     StudentUserDao getById(long id);
 }

@@ -22,10 +22,10 @@ public class JwtUserDetailsService implements UserDetailsService {
     PasswordEncoder passwordEncoder;
 
     @Override
-    public UserDetails loadUserByUsername(String username) throws UsernameNotFoundException {
-        StudentUserDao user = userDao.findByEmail(username);
+    public UserDetails loadUserByUsername(String email) throws UsernameNotFoundException {
+        StudentUserDao user = userDao.findByemail(email);
         if(user==null){
-            throw new UsernameNotFoundException("User not found" + username);
+            throw new UsernameNotFoundException("User not found" + email);
         }
         return new org.springframework.security.core.userdetails.User(user.getEmail(),user.getPassword(),new ArrayList<>());
     }

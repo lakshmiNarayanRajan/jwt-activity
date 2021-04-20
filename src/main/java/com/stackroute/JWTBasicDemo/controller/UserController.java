@@ -44,7 +44,7 @@ public class UserController {
 
     @GetMapping("students/{email}")
     public StudentUserDao getUserByEmail(@PathVariable String email){
-        return service.findByEmail(email);
+        return service.findByemail(email);
     }
 
 }

@@ -10,5 +10,5 @@ public interface UserService {
     StudentUserDao createNewUser(StudentUserDao student);
     void deleteUser(long id);
     StudentUserDao updateUser(StudentUserDao studentUserDao);
-    StudentUserDao findByEmail(String email);
+    StudentUserDao findByemail(String email);
 }

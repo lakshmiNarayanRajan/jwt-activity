@@ -50,7 +50,7 @@ public class JwtAuthenticationController {
         }catch (DisabledException e){
             throw new Exception("User Disabled", e);
         }catch (BadCredentialsException e){
-            throw new Exception("Invalid Credentails",e);
+            throw new Exception("Invalid Credentials",e);
         }
     }
 
