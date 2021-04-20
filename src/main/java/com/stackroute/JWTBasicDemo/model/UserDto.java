@@ -1,22 +1,17 @@
 package com.stackroute.JWTBasicDemo.model;
 
+import lombok.Getter;
+import lombok.Setter;
+
+@Getter
+@Setter
 public class UserDto {
-    private  String username;
+    private  String email;
     private String password;
+    private String firstname;
+    private String lastname;
+    private int age;
+    private String phoneno;
 
-    public String getUsername() {
-        return username;
-    }
 
-    public void setUsername(String username) {
-        this.username = username;
-    }
-
-    public String getPassword() {
-        return password;
-    }
-
-    public void setPassword(String password) {
-        this.password = password;
-    }
 }
